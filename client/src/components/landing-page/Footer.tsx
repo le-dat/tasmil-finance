@@ -4,7 +4,7 @@ import ConnectAccountButton from "../ConnectAccountButton";
 
 const Footer = () => {
   return (
-    <section className="py-24 relative bg-black">
+    <section className="py-24 relative bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

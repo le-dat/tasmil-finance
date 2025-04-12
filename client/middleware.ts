@@ -1,6 +1,6 @@
+import { PUBLIC_PATHS } from "@/constants/routes";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { PUBLIC_PATHS } from "./constants/routes";
 
 export async function middleware(request: NextRequest) {
   const isPublicPath = PUBLIC_PATHS.some((path) => request.nextUrl.pathname.startsWith(path));

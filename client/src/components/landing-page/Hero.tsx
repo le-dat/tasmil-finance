@@ -5,7 +5,7 @@ import ConnectAccountButton from "../ConnectAccountButton";
 
 const Hero = () => {
   return (
-    <section className="pt-20 overflow-hidden">
+    <section className="overflow-hidden">
       <div className="container relative z-10 mx-auto px-4">
         <div className="flex flex-col items-center text-center">
           <motion.div

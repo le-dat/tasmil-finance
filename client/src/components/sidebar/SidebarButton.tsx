@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
-import { cn } from '@/lib/utils';
-import { ButtonProps } from '../ui/button';
+import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
+import { ButtonProps } from "../ui/button";
 
 export interface SidebarItem extends ButtonProps {
   icon: React.ReactNode;
@@ -28,15 +28,8 @@ const SidebarButton: React.FC<SidebarItem> = ({
     transition={{ duration: 0.2 }}
     onClick={disabled ? undefined : onClick}
     className={cn(
-      'p-4 rounded-md flex items-center gap-2 relative cursor-pointer transition-all duration-300',
-      'text-gray-500 dark:text-neutral-400',
-      'hover:text-white',
-      isActive && [
-        'text-white',
-        'bg-gradient-to-r from-purple-500/20 to-pink-500/20',
-        'hover:from-purple-500/30 hover:to-pink-500/30',
-        'shadow-[0_0_15px_rgba(168,85,247,0.3)]'
-      ]
+      "p-4 rounded-md flex items-center gap-2 relative cursor-pointer transition-all duration-300",
+      "text-gray-500 dark:text-neutral-400 dark:hover:text-white"
     )}
     id={`${label}-${link}`}
   >
@@ -47,7 +40,7 @@ const SidebarButton: React.FC<SidebarItem> = ({
         layoutId="bubble"
         className="absolute rounded-lg z-[-1] inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20"
         transition={{
-          type: 'spring',
+          type: "spring",
           bounce: 0.2,
           duration: 0.6,
         }}

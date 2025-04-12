@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
   images: {
-    domains: ['images.unsplash.com', 'ui.aceternity.com', 'tokens.1inch.io'],
+    domains: ["images.unsplash.com", "ui.aceternity.com", "tokens.1inch.io"],
   },
   webpack: (config) => {
     config.resolve.fallback = {
@@ -13,6 +12,6 @@ const nextConfig: NextConfig = {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
-}; 
+};
 
 export default nextConfig;

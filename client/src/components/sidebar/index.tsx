@@ -14,9 +14,9 @@ import {
   Trophy,
   Users,
 } from "lucide-react";
-import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
+import Logo from "../Logo";
 import SidebarButton, { SidebarItem } from "./SidebarButton";
 
 const SIDEBAR_ITEMS: SidebarItem[] = [
@@ -56,14 +56,9 @@ const Sidebar: React.FC = () => {
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
-        <div className={cn(HEADER_HEIGHT, "p-4 border-b border-border flex items-center gap-2")}>
-          <Image src="/images/logo.png" alt="logo" width={40} height={40} className="w-10 h-10" />
-          <h3 className="text-xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-            Vault Market
-          </h3>
-        </div>
+        <Logo className={HEADER_HEIGHT} />
 
-        <ScrollArea className="flex-1 px-3 py-4 mb-6">
+        <ScrollArea className="flex-1 px-3 pt-4 pb-6">
           <AnimatePresence mode="wait">
             <div className="flex flex-col gap-2">
               {SIDEBAR_ITEMS.map((item, index) => (

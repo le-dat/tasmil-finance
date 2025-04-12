@@ -34,10 +34,10 @@ export const ChatSuggestions = ({
               key={`${suggestion.text}-${index}`}
               onClick={() => onSendMessage(suggestion.text)}
               className={cn(
-                "relative w-full cursor-pointer text-left text-sm bg-card/30 text-white rounded-lg p-6",
+                "relative w-full cursor-pointer text-left text-sm bg-card text-white rounded-lg p-6",
                 "border border-card transition-all duration-300",
                 "hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-pink-500/20",
-                "hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]"
+                "shadow-[0_0_5px_rgba(168,85,247,0.3)]"
               )}
             >
               <div className="flex items-center gap-2">

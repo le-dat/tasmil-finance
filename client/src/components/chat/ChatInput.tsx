@@ -58,7 +58,7 @@ export const ChatInput = ({ onSendMessage, isLoading, className }: ChatInputProp
             onChange={handleTextareaChange}
             onKeyDown={handleKeyDown}
             placeholder="Type your message..."
-            className="min-h-[52px] max-h-32 pe-12 resize-none !bg-card text-white placeholder:text-white/50 border-none focus-visible:ring-background focus-visible:ring-1 outline-background "
+            className="min-h-[52px] max-h-32 pe-12 resize-none text-white placeholder:text-white/50 border-none focus-visible:ring-background focus-visible:ring-1 outline-background "
             disabled={isLoading}
           />
           <Button

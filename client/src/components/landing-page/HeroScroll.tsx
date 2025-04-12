@@ -10,10 +10,10 @@ interface HeroScrollProps {
 
 export default function HeroScroll({ className }: HeroScrollProps) {
   return (
-    <div className={cn('flex flex-col overflow-hidden ', className)}>
+    <div className={cn('flex flex-col ', className)}>
       <ContainerScroll>
         <Image
-          src={`https://ui.aceternity.com/_next/image?url=%2Flinear.webp&w=3840&q=75`}
+          src={`/images/chat-bot.png`}
           alt="hero"
           height={720}
           width={1400}
