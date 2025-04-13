@@ -7,6 +7,7 @@ import IntroAi from "@/components/landing-page/IntroAi";
 import StepMoving from "@/components/landing-page/StepMoving";
 import Squares from "@/components/ui/squares-background";
 import { cn } from "@/lib/utils";
+
 export default function Home() {
   const WIDTH = "w-full max-w-[var(--container-width)] mx-auto";
 

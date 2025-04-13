@@ -9,9 +9,15 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   :root {
     --container-width: 1440px;
     --header-height: 83px;
+    --brand-cyan: #00ff99;
+    --brand-purple: #9089fc;
 
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -76,6 +82,15 @@
   }
 }
 
+@layer utilities {
+  .gradient-outline {
+    position: relative;
+    background: linear-gradient(#111111, #111111) padding-box,
+      linear-gradient(45deg, var(--brand-cyan), var(--brand-purple)) border-box;
+    border: 0.5px solid transparent;
+    color: var(--primary);
+  }
+}
 
 /* Webkit (Chrome, Safari, Edge) scrollbar styles */
 ::-webkit-scrollbar {

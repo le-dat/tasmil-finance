@@ -1,18 +1,28 @@
 "use client";
 
+import { PART } from "@/constants/part";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Navbar = () => {
+interface NavbarProps {
+  className?: string;
+}
+
+const Navbar = ({ className }: NavbarProps) => {
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Features", href: "#features" },
-    { name: "AI", href: "#ai" },
-    { name: "Steps", href: "#steps" },
+    { name: "Features", href: `#${PART.features}` },
+    { name: "AI", href: `#${PART.ai}` },
+    { name: "Steps", href: `#${PART.steps}` },
   ];
 
   return (
-    <nav className="bg-black/20 backdrop-blur-sm border border-border rounded-full px-6 py-2">
+    <nav
+      className={cn(
+        "bg-black/20 backdrop-blur-sm border border-border rounded-full px-6 py-2",
+        className
+      )}
+    >
       <ul className="flex items-center gap-6">
         {navItems.map((item) => (
           <motion.li key={item.name} whileHover={{ scale: 1.05 }}>

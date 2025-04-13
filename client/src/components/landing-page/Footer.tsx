@@ -1,10 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import ConnectAccountButton from "../ConnectAccountButton";
+import ConnectWallet from "../ConnectWallet";
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
-    <section className="py-24 relative bg-gradient-to-b from-black to-gray-900">
+    <section className="pt-24 pb-8 relative bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -19,10 +20,11 @@ const Footer = () => {
             Join thousands of traders using AI to optimize their DeFi strategies
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <ConnectAccountButton />
+            <ConnectWallet label="Get Started" />
           </div>
         </motion.div>
       </div>
+      <SocialMedia />
     </section>
   );
 };

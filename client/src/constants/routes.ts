@@ -1,4 +1,5 @@
 export const PATHS = {
+  dashboard: "/dashboard",
   aiAgent: "/ai-agent",
   airdrop: "/airdrop",
   referral: "/referral",
@@ -16,6 +17,7 @@ export const PATHS = {
 export const PUBLIC_PATHS = [PATHS.landingPage, PATHS.next, PATHS.favicon, PATHS.robots];
 
 export const PROTECTED_PATHS = [
+  PATHS.dashboard,
   PATHS.aiAgent,
   PATHS.airdrop,
   PATHS.referral,

@@ -13,6 +13,7 @@ import {
   Settings,
   Trophy,
   Users,
+  Wallet
 } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
@@ -20,6 +21,7 @@ import Logo from "../Logo";
 import SidebarButton, { SidebarItem } from "./SidebarButton";
 
 const SIDEBAR_ITEMS: SidebarItem[] = [
+  { icon: <Wallet className="mr-2" />, label: "Trading", link: PATHS.dashboard },
   { icon: <Brain className="mr-2" />, label: "Ai Agents", link: PATHS.aiAgent },
   { icon: <Gift className="mr-2" />, label: "Airdrop", link: PATHS.airdrop },
   { icon: <Users className="mr-2" />, label: "Referral", link: PATHS.referral },

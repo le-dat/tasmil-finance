@@ -1,17 +1,20 @@
-'use client';
+"use client";
 
-import { GlowingEffect } from '@/components/ui/glowing-effect';
-import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
-import { Box, Lock, Search, Settings, Sparkles } from 'lucide-react';
-
+import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { PART } from "@/constants/part";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
 interface FeaturesProps {
   className?: string;
 }
 
 export default function Features({ className }: FeaturesProps) {
   return (
-    <div className={cn('container mx-auto flex flex-col items-center', className)}>
+    <div
+      id={PART.features}
+      className={cn("container mx-auto flex flex-col items-center", className)}
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -36,7 +39,7 @@ export default function Features({ className }: FeaturesProps) {
 
       <ul
         className={cn(
-          'grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 my-20'
+          "grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 my-20"
         )}
       >
         <GridItem
@@ -83,7 +86,7 @@ interface GridItemProps {
 
 const GridItem = ({ area, icon, title, description }: GridItemProps) => {
   return (
-    <li className={cn('min-h-[14rem] list-none relative group', area)}>
+    <li className={cn("min-h-[14rem] list-none relative group", area)}>
       <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
         <GlowingEffect
           spread={40}

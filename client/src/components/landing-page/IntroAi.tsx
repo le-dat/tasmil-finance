@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
-import { Card } from '@/components/ui/card';
-import { SplineScene } from '@/components/ui/splite';
-import { Spotlight } from '@/components/ui/spotlight';
-import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
+import { Card } from "@/components/ui/card";
+import { SplineScene } from "@/components/ui/splite";
+import { Spotlight } from "@/components/ui/spotlight";
+import { PART } from "@/constants/part";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 interface IntroAiProps {
   className?: string;
@@ -13,8 +14,9 @@ interface IntroAiProps {
 export default function IntroAi({ className }: IntroAiProps) {
   return (
     <Card
+      id={PART.ai}
       className={cn(
-        'w-full h-[500px] bg-black/[0.96] relative overflow-hidden border-none',
+        "w-full h-[500px] bg-black/[0.96] relative overflow-hidden border-none",
         className
       )}
     >

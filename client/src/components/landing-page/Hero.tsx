@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ConnectAccountButton from "../ConnectAccountButton";
+import ConnectWallet from "../ConnectWallet";
 
 const Hero = () => {
   return (
@@ -46,7 +46,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <ConnectAccountButton />
+            <ConnectWallet label="Get Started" />
           </motion.div>
         </div>
       </div>

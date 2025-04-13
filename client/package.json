@@ -15,7 +15,7 @@
     "url": "https://github.com/le-dat/tasmil-finance/issues"
   },
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

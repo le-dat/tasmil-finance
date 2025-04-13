@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence } from "framer-motion";
-import ConnectAccountButton from "./ConnectAccountButton";
+import ConnectWallet from "./ConnectWallet";
 interface NavbarProps {
   className?: string;
 }
@@ -19,7 +19,7 @@ const Navbar = ({ className }: NavbarProps) => {
         )}
       >
         <div></div>
-        <ConnectAccountButton />
+        <ConnectWallet />
       </div>
     </AnimatePresence>
   );
