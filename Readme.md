@@ -9,13 +9,21 @@ A sophisticated AI-powered trading platform built on Hyperliquid, enabling seaml
 - **Market Evaluation**: Real-time market analysis and price predictions
 - **Risk Management**: Automated risk assessment and position sizing
 - **Portfolio Optimization**: AI-driven portfolio rebalancing and strategy optimization
+- **Trending Analysis**: Real-time market trends and insights
+- **DeFi Integration**: Automated DeFi strategy execution and optimization
+- **User Settings**: Customizable trading preferences and notifications
+- **Help Center**: Comprehensive documentation and support resources
 
 ## Technical Stack
 
-- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
 - **AI Integration**: Custom AI agents for market analysis and trading decisions
 - **Blockchain**: Hyperliquid protocol integration
 - **State Management**: React Query, Zustand
 - **UI Components**: Shadcn UI, Radix
 - **Validation**: Zod
 - **Testing**: Jest, React Testing Library
+- **Routing**: Next.js App Router
+- **Authentication**: Thirdweb wallet integration
+- **Styling**: Tailwind CSS with custom animations
+- **Performance**: React Server Components, Suspense boundaries

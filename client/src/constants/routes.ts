@@ -1,10 +1,9 @@
 export const PATHS = {
   dashboard: "/dashboard",
   aiAgent: "/ai-agent",
-  airdrop: "/airdrop",
-  referral: "/referral",
-  earn: "/earn",
   portfolio: "/portfolio",
+  trending: "/trending",
+  defiAgent: "/defi-agent",
   settings: "/settings",
   help: "/help",
 
@@ -19,10 +18,9 @@ export const PUBLIC_PATHS = [PATHS.landingPage, PATHS.next, PATHS.favicon, PATHS
 export const PROTECTED_PATHS = [
   PATHS.dashboard,
   PATHS.aiAgent,
-  PATHS.airdrop,
-  PATHS.referral,
-  PATHS.earn,
   PATHS.portfolio,
+  PATHS.trending,
+  PATHS.defiAgent,
   PATHS.settings,
   PATHS.help,
 ];
