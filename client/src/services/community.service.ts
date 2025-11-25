@@ -1,6 +1,6 @@
 import { apiClient } from "@/lib/api/api-client";
 import { formatDate } from "@/lib/utils/format";
-import { BentoItem } from "@/components/community/NewsFeed";
+import { BentoItem } from "@/components/features/community/news-feed";
 
 export function formatIsoToDate(isoString: string): string {
   return formatDate(isoString);

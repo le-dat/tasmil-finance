@@ -1,5 +1,5 @@
 import React from "react";
-import LoadingItem from "@/components/community/LoadingItem";
+import LoadingItem from "@/components/features/community/loading-item";
 
 function Loading() {
   return (

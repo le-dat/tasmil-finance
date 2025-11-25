@@ -1,4 +1,4 @@
-import Navbar from "@/components/sidebar/Navbar";
+import Navbar from "@/components/layout/sidebar/navbar";
 import { Skeleton } from "@/components/ui/skeleton";
 
 function ChatMessageSkeleton({ isBot }: { isBot: boolean }) {

@@ -1,7 +1,7 @@
 "use client";
 
-import ChatDefi from "@/components/defi-agent/ChatDeFi";
-import { ContentLayout } from "@/components/admin-panel/content-layout";
+import ChatDefi from "@/components/features/chat/chat-defi";
+import { ContentLayout } from "@/components/layout/admin-panel/content-layout";
 import Image from "next/image";
 
 const DefiAgentPage = () => {
