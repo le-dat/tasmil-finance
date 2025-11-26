@@ -1,13 +1,21 @@
-# compiled output
-client/.next/
-client/node_modules
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
 
-server/dist
-server/node_modules
-server/build
+# Compiled output
+client/.next/
+client/out/
+server/dist/
+server/build/
+*.tsbuildinfo
+
+# Environment variables
+/server/*.env
+/client/*.env
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 pnpm-debug.log*
@@ -15,45 +23,89 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.turbo/
+.swc/
+
+# PM2
+.pm2/
+pm2.log
+ecosystem.config.js.bak
+
 # OS
 .DS_Store
-
-# Tests
-/coverage
-/.nyc_output
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # IDEs and editors
-/.idea
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*.swn
+*~
 .project
 .classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
+*.sublime-project
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
-# temp directory
-.temp
-.tmp
+# Temporary files
+.temp/
+.tmp/
+*.tmp
+*.bak
+*.backup
 
 # Runtime data
-pids
+pids/
 *.pid
 *.seed
 *.pid.lock
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/launch.json
+
+# Diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Build files
+dist/
+build/
+*.tgz
+
+# TypeScript
+*.tsbuildinfo
+.tsbuildinfo
+
+# Misc
+.vercel
+.next
+.nuxt
+.output
+
+**.sh
